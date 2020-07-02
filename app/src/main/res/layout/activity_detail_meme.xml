@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailMemeActivity">
+
+    <ImageView
+        android:id="@+id/detail_ivMeme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detail_ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/detail_ivMeme"
+        app:layout_constraintTop_toTopOf="@+id/detail_ivMeme" />
+
+    <TextView
+        android:id="@+id/detail_tvText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_ivLogo"
+        app:layout_constraintEnd_toEndOf="@+id/detail_ivMeme"
+        app:layout_constraintStart_toEndOf="@+id/detail_ivLogo"
+        app:layout_constraintTop_toTopOf="@+id/detail_ivLogo" />
+
+    <EditText
+        android:id="@+id/detail_etText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_ivLogo"
+        app:layout_constraintEnd_toEndOf="@+id/detail_ivMeme"
+        app:layout_constraintStart_toEndOf="@+id/detail_ivLogo"
+        app:layout_constraintTop_toTopOf="@+id/detail_ivLogo" />
+
+    <Button
+        android:id="@+id/detail_btnAddLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_image"
+        android:drawablePadding="10dp"
+        android:text="Add Logo"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/detail_btnAddText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_text"
+        android:drawablePadding="10dp"
+        android:text="Add Text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detail_btnAddLogo" />
+
+    <Button
+        android:id="@+id/detail_btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="simpan"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/detail_btnBatal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/detail_btnBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="batal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/detail_btnSimpan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
